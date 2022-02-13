@@ -17,10 +17,10 @@
     <img src="./images/logo.svg" alt="">
   </header>
   <div class="content-wrapper">
-    <section id="select-tip">
+    <div class="select-tip">
       <form action="#" class="bill">
         <label for="bill">Bill</label>
-        <input type="text" id="bill" placeholder="0">
+        <input type="number" id="bill" placeholder="0">
       </form> 
       <div class="percentages">
         <span id="select-tip">Select Tip %</span>
@@ -35,30 +35,27 @@
         <label for="number-of-people">Number of People</label>
         <input type="number" name="numberOfPeople" id="number-of-people" min="1" placeholder="0">
       </from>
-    </section>
-    <section id="calculation">
-      <div class="tipAmount">
-        <p>
-          Tip
-          <span>/ person</span>
-        </p>
-        <input type="number" name="TipPerPerson" placeholder="$0.00">
-      </div>
-  
-      <div class="total">
-        <p>
-          Total
-          <span>/ person</span>
-        </p>
-        <input type="number" name="TotalTip" placeholder="$0.00">
-      </div>
-  
-      <button type="reset">Reset</button>
-    </section>
-  
+    </div>
+    <div id="calculation">
+      <form class="tips">
+        <div class="tipAmount">
+          <p>
+            <span>Tip Amount</span><br>
+            / person
+          </p>
+          <input type="number" name="TipPerPerson" placeholder="$0.00">
+        </div>
     
-  
-    
+        <div class="total">
+          <p>
+            <span>Total</span><br>
+            / person
+          </p>
+          <input type="number" name="TotalTip" placeholder="$0.00">
+        </div>
+        <button type="reset" id="reset">Reset</button>
+      </form>
+    </div> 
   </div>
   
   <div class="attribution">
